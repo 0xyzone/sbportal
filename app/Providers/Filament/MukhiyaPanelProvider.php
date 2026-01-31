@@ -31,6 +31,7 @@ class MukhiyaPanelProvider extends PanelProvider
             ->path('mukhiya')
             ->viteTheme('resources/css/filament/mukhiya/theme.css')
             ->login()
+            ->favicon(asset('images/favicon.png'))
             ->passwordReset()
             ->emailChangeVerification()
             ->emailVerification()

@@ -30,6 +30,7 @@ class SchoolPanelProvider extends PanelProvider
             ->path('school')
             ->viteTheme('resources/css/filament/school/theme.css')
             ->login()
+            ->favicon(asset('images/favicon.png'))
             ->profile()
             ->passwordReset()
             ->emailChangeVerification()

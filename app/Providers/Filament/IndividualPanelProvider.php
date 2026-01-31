@@ -30,6 +30,7 @@ class IndividualPanelProvider extends PanelProvider
             ->path('me')
             ->viteTheme('resources/css/filament/individual/theme.css')
             ->login()
+            ->favicon(asset('images/favicon.png'))
             ->profile()
             ->passwordReset()
             ->emailChangeVerification()
