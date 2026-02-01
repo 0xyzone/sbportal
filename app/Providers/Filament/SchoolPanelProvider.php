@@ -30,11 +30,14 @@ class SchoolPanelProvider extends PanelProvider
             ->path('school')
             ->viteTheme('resources/css/filament/school/theme.css')
             ->login()
-            ->favicon(asset('images/favicon.png'))
-            ->profile()
+            ->registration()
             ->passwordReset()
             ->emailChangeVerification()
             ->emailVerification()
+            ->favicon(asset('images/favicon.png'))
+            ->brandLogo(fn() => view('vendor.filament.components.brand'))
+            ->brandLogoHeight('6rem')
+            ->profile()
             ->databaseNotifications()
             ->colors([
                 'primary' => Color::Amber,

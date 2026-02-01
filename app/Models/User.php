@@ -203,4 +203,18 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser, Has
 
         return $percentage;
     }
+
+    protected static function booted(): void
+    {
+        static::created(function (User $user) {
+            $panelId = Filament::getCurrentPanel()?->getId();
+            if ($panelId === 'individual') {
+                $user->assignRole('me_user');
+            } elseif ($panelId === 'school') {
+                $user->assignRole('school_user');
+            } elseif ($panelId === 'mukhiya') {
+                $user->assignRole('super_admin');
+            };
+        });
+    }
 }

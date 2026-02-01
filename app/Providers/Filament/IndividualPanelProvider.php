@@ -30,11 +30,14 @@ class IndividualPanelProvider extends PanelProvider
             ->path('me')
             ->viteTheme('resources/css/filament/individual/theme.css')
             ->login()
-            ->favicon(asset('images/favicon.png'))
-            ->profile()
+            ->registration()
             ->passwordReset()
             ->emailChangeVerification()
             ->emailVerification()
+            ->favicon(asset('images/favicon.png'))
+            ->brandLogo(fn() => view('vendor.filament.components.brand'))
+            ->brandLogoHeight('6rem')
+            ->profile()
             ->databaseNotifications()
             ->colors([
                 'primary' => Color::Amber,

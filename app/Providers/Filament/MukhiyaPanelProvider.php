@@ -32,6 +32,8 @@ class MukhiyaPanelProvider extends PanelProvider
             ->viteTheme('resources/css/filament/mukhiya/theme.css')
             ->login()
             ->favicon(asset('images/favicon.png'))
+            ->brandLogo(fn() => view('vendor.filament.components.brand'))
+            ->brandLogoHeight('6rem')
             ->passwordReset()
             ->emailChangeVerification()
             ->emailVerification()
