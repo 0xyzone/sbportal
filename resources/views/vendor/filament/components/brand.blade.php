@@ -8,6 +8,8 @@
         <span>Spelling</span>
         <span>Bee</span>
         <span style="color: #eab308" class="font-bold">Hive</span>
-        <span class="text-sm px-2 py-1 bg-amber-400 text-black ml-2 capitalize rounded-lg">{{ Filament\Facades\Filament::getCurrentPanel()?->getId() }}</span>
+        <span class="text-sm px-2 py-1 bg-amber-400 text-black ml-2 capitalize rounded-lg">
+            {{ Filament\Facades\Filament::getCurrentPanel()?->getId() }}
+        </span>
     </p>
 </div>
