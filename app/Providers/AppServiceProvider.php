@@ -2,10 +2,13 @@
 
 namespace App\Providers;
 
+use Filament\View\PanelsRenderHook;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use BezhanSalleh\PanelSwitch\PanelSwitch;
+use Filament\Support\Facades\FilamentView;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -39,6 +42,6 @@ class AppServiceProvider extends ServiceProvider
 
         if (config('app.env') !== 'local') {
             URL::forceScheme('https');
-        }
+        };
     }
 }

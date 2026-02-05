@@ -3,3 +3,6 @@
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
 @source '../../../../vendor/bezhansalleh/filament-panel-switch/resources/views/**/*.blade.php';
+@source '../../../views/vendor/filament/components/**/*.blade.php';
+
+/* @custom-variant dark (&:where(.fi-dark, .fi-dark *)); */
