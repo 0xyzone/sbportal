@@ -71,8 +71,8 @@
 <body class="min-h-screen flex flex-col items-center justify-center p-6">
 
     <div class="hive-container"><div class="honeycomb-overlay"></div></div>
-    <div class="bee bee-1">🐝</div>
-    <div class="bee bee-2">🐝</div>
+    <div class="bee bee-1 w-12 h-auto"><img src="{{ asset('images/mordern_bee.png') }}" alt=""></div>
+    <div class="bee bee-2 w-12 h-auto"><img src="{{ asset('images/mordern_bee.png') }}" alt=""></div>
 
     <div class="relative z-10 text-center mb-16">
         <div class="glow-hex inline-block mb-6">
@@ -86,7 +86,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full z-10">
         
-        <a href="{{ url('/school') }}" class="group relative bg-[#111] border border-white/5 p-12 rounded-[3rem] transition-all duration-500 hover-glow transform hover:-translate-y-2">
+        <a href="{{ url('/school') }}" class="group relative bg-[#111] border border-white/5 p-12 rounded-[3rem] transition-all duration-500 hover-glow transform hover:-translate-y-2 shadow-amber-400/20 shadow-2xl">
             <div class="relative z-10">
                 <div class="text-4xl mb-8 bg-[#1a1a1a] w-20 h-20 flex items-center justify-center rounded-3xl border border-white/10 group-hover:bg-[#eab308] group-hover:text-black transition-all duration-500">🏫</div>
                 <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">School Portal</h2>
@@ -97,10 +97,12 @@
 
         <a href="{{ url('/me') }}" class="group relative bg-[#eab308] p-12 rounded-[3rem] transition-all duration-500 hover:scale-[1.03] shadow-[0_30px_70px_rgba(234,179,8,0.2)]">
             <div class="relative z-10 text-black">
-                <div class="text-4xl mb-8 bg-black w-20 h-20 flex items-center justify-center rounded-3xl shadow-2xl">🐝</div>
-                <h2 class="text-3xl font-black mb-4 tracking-tight">My Dashboard</h2>
+                <div class="text-4xl mb-8 bg-black w-20 h-20 flex items-center justify-center rounded-3xl shadow-2xl p-4">
+                    <img src="{{ asset('images/mordern_bee.png') }}" alt="">
+                </div>
+                <h2 class="text-3xl font-black mb-4 tracking-tight">Individual Portal</h2>
                 <p class="text-black/70 text-lg font-medium leading-relaxed mb-8">Ready to spell? Access your training room, live competitions, and trophies.</p>
-                <span class="bg-black text-white px-6 py-2 rounded-full font-black tracking-widest text-xs uppercase">Start Buzzing</span>
+                <span class="bg-black text-white px-6 py-2 rounded-full font-black tracking-widest text-xs uppercase">Start Buzzing &rarr;</span>
             </div>
             <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0); background-size: 20px 20px;"></div>
         </a>
