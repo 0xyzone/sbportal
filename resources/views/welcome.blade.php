@@ -6,6 +6,7 @@
     <title>Spelling Bee | The Golden Hive</title>
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
     <style>
         body { 
             font-family: 'Outfit', sans-serif; 
