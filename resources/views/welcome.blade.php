@@ -86,9 +86,9 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full z-10">
         
-        <a href="{{ url('/school') }}" class="group relative bg-[#111] border border-white/5 p-12 rounded-[3rem] transition-all duration-500 hover-glow transform hover:-translate-y-2 shadow-amber-400/20 shadow-2xl">
+        <a href="{{ url('/school') }}" class="group relative bg-[#111] border border-amber-400/50 p-12 rounded-[3rem] transition-all duration-500 hover-glow transform hover:-translate-y-2 shadow-amber-400/20 shadow-2xl">
             <div class="relative z-10">
-                <div class="text-4xl mb-8 bg-[#1a1a1a] w-20 h-20 flex items-center justify-center rounded-3xl border border-white/10 group-hover:bg-[#eab308] group-hover:text-black transition-all duration-500">🏫</div>
+                <div class="text-4xl mb-8 bg-[#1a1a1a] w-20 h-20 flex items-center justify-center rounded-3xl border border-white/50 group-hover:bg-[#eab308] group-hover:text-black transition-all duration-500">🏫</div>
                 <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">School Portal</h2>
                 <p class="text-gray-400 text-lg leading-relaxed mb-8">Manage student registries, institutional rankings, and competition heat data.</p>
                 <span class="text-[#eab308] font-black tracking-widest text-xs uppercase group-hover:pl-4 transition-all duration-300">Entrance &rarr;</span>
