@@ -91,10 +91,6 @@ class MukhiyaPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ])
-            ->renderHook(
-                PanelsRenderHook::BODY_END,
-                fn (): \Illuminate\Contracts\View\View => view('vendor.filament.components.footer'),
-            );
+            ]);
     }
 }
