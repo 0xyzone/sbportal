@@ -38,8 +38,8 @@
 
         /* Pulsing Glow */
         @keyframes pulse-glow {
-            0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 8px var(--honey)); }
-            50% { opacity: 0.8; filter: drop-shadow(0 0 25px var(--honey)); }
+            0%, 100% { filter: drop-shadow(0 0 8px var(--honey)); }
+            50% { filter: drop-shadow(0 0 25px var(--honey)); }
         }
 
         .glow-hex { animation: pulse-glow 5s ease-in-out infinite; }
@@ -76,9 +76,7 @@
 
     <div class="relative z-10 text-center mb-16">
         <div class="glow-hex inline-block mb-6">
-            <svg width="60" height="60" viewBox="0 0 100 100">
-                <path d="M50 5 L90 28 L90 72 L50 95 L10 72 L10 28 Z" fill="none" stroke="#eab308" stroke-width="3"/>
-            </svg>
+            <img src="{{ asset('images/favicon.png') }}" alt="" class="w-32 h-auto">
         </div>
         <h1 class="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none">
             THE <span class="text-[#eab308] drop-shadow-[0_0_20px_rgba(234,179,8,0.5)]">HIVE</span>
